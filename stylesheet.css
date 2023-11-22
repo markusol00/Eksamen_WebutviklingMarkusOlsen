@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    max-width: 1600px;
+}
+h1{
+    font-size: 3rem;
+}
+.yellow-button{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    background-color: #e6bd43;
+    font-weight: 700;
+
+}
+
+.yellow-button:hover{
+    background-color: #000000;
+    color: #e6bd43;
+    transition: 0.3s;
+}
+
+
+
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    display:flex;
+    gap: 30px;
+    list-style: none;
+
+}
+
+header nav img{
+    width: 75px;
+}
+
+.home-section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.home-section-1 p{
+    width: 60%;
+}
+
+.home-section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Legg til denne egenskapen for å sentrere horisontalt */
+    width: 60%; /* Legg til denne egenskapen for å sette bredden til 50% */
+    margin: 0 auto; /* Legg til denne egenskapen for å sentrere i forhold til parent container */
+}
+.home-section-2 h3{
+    font-size: 1.5rem;
+
+}
+
+#test{
+    display: flex;
+    flex-direction: row;
+    background-color: #e6bd43;
+    align-items: center;
+}
+#test img{
+    padding: 1.5rem;
+}
+#test article{
+    padding-bottom: 7rem;
+    width: 60%
+
+}
+#test article a {
+    text-decoration: none;
+    padding: 1rem;
+    border: 2px;
+    border-style: solid;
+}
+
+.our-services-section{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    gap: 1.5rem;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252525;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+footer nav img {
+    width: 75px;
+}
+footer p{
+    color: white;
+
+}
+.our-services-section article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Read-more{
+    color: #000000;
+    margin-top: 25px;
+}
+
+.Read-more:hover{
+    background-color: #000000;
+    color: #e6bd43;
+    transition: 0.3;
+    
+}
+.home-section-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: grey;
+
+}
+.home-section-4 h3{
+    font-size: 1.5rem;
+}
+
+
+#portfolio{
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    background-color: #c4bbbbb0;
+    background-image: url(img/pen-4337521_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+
+}
+.product-section-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+/*
+article {
+    flex: 1 1 200px;  flex-grow, flex-shrink, flex-basis 
+    max-width: 692px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+*/
+
+.product-section-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .product-section-2 article {
+    flex-grow: 1;
+    max-width: 692px;
+    margin: 10px;
+  }
+  
+  .product-section-2 img {
+    width: 100%;
+  }
+
+  .product-section-3{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+.product-section-3 article{
+    flex-grow: 1;
+    max-width: 692px;
+    margin: 10px;
+}
+.product-section-3 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.product-section-4{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product-section-4 article{
+    flex-grow: 1;
+    max-width: 692px;
+    margin: 10px;
+
+}
+.product-section-4 img{
+        width: 100%;
+    height: auto;
+    max-width: 100%;
+
+}
+  #benji {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+  }
+  
+  #benji img {
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+    max-width: 692px;
+  }
+  
+  
+
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-section-2 h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+i{
+    font-size: 2rem;
+}
+
+
+#previous-jobs {
+    text-align: left;
+    margin-left: 40px;
+}
+
+#previous-jobs hr{
+    border: 0;
+    height: 3px;
+    background-color: #e6bd43;
+    margin-bottom: 35px;
+}
+
+#previous-jobs h2 {
+    padding-bottom: 10px;
+}
+
+
+#previous-jobs a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #252525;
+    padding: 5px 10px;
+}
+
+#previous-jobs a[href="#"] {
+    border: 2px solid #000000; /* Style for Development link */
+}
+
+#previous-jobs a[href="#"]:nth-child(2) {
+    border: 2px solid #000000; /* Style for Branding link */
+}
+
+#previous-jobs a[href="#"]:nth-child(3) {
+    border: 2px solid #000000; /* Style for Design link */
+}
+
+.bottom-border {
+    border-bottom: 4px solid #e6bd43;
+    padding-bottom: 8px;
+
+}
+
+/* About-site */
+
+.about-section-1{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(img/pen-4337521_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.about-section-1 article{
+    width: 40%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4efefd1;
+    margin-right: 3rem;
+}
+.our-services-about h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.about-section-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
+    background-color: #e6bd43;
+    padding-bottom: 2.5rem;
+}
+.about-section-3{
+    width: 100%;
+    text-align: center;
+}
+.about-section-3 h2{
+    width: 100%;
+}
