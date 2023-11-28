@@ -12,15 +12,15 @@
         <nav>
             <a href="index.html"><img src="ressurser/ressurser/logo1.png" alt="logo"></a>
         <ul>
-            <li><a href="index.html"><li>Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a class="yellow-button" href="#">Contact</a></li>
+            <li><a href="#" class="active">About</a></li>
+            <li><a class="yellow-button" href="#about-main-section-4">Contact</a></li>
         </ul>
     </nav>
     </header>
     <main>
-        <section class="about-section-1">
+        <section id="about-main-section-1">
             <article>
                 <p>Company name</p>
                 <h2>About our company</h2>
@@ -28,10 +28,10 @@
                     Proin mattis ligula iaculis, convallis lectus condimentum, rutrum ante. In tincidunt imperdiet lectus nec dictum. Aliquam ut mi vel arcu blandit 
                     hendrerit. Sed vestibulum velit vitae sapien suscipit cursus
                 </p>
-                <a href="#" class="yellow-button">eple</a>
+                <a href="#about-main-section-4" class="yellow-button">Get in touch with us</a>
             </article>
         </section>
-        <section class="our-services-about">
+        <section id="about-main-section-2">
             <h2>Our services</h2>
             <div class="our-services-section">
                 <article>
@@ -55,26 +55,63 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </article>
             </section>
-            <section class="about-section-3">
+            <section id="about-main-section-3">
                 <h2>Some of our clients</h2>
                 <img src="ressurser/ressurser/logo1.png" alt="Logo1">
                 <img src="ressurser/ressurser/logo2.png" alt="Logo2">
                 <img src="ressurser/ressurser/logo3.png" alt="Logo3">
 
             </section>
+            <section id="about-main-section-4">
+                <h2>Contact us</h2>
+                <article>
+                    <h3>Send us a message</h3>
+                    <form>
+                        <label>Name</label>
+                        <input type="search" placeholder="Ola Nordmann...">
+                    </form>
+                    <form>
+                        <label>Subject</label>
+                        <input type="search" placeholder="Branding...">
+                    </form>
+                    <form>
+                        <label>Message</label>
+                        <input id="about-message-input" type="search" placeholder="">
+                    </form>
+                    <button class="yellow-button">Send message</button>
+                </article>
+                <article>
+                    <h3>Contact information</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel lorem vitae enim maximus 
+                        placerat ac sit amet neque. Praesent eu rutrum massa. Orci varius 
+                    </p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-pin"></i>
+                            <p>B R A Veien 4, 1754 Halden</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone" style="color: #191919;"></i>
+                            <p>69 60 80 00</li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#">postmottak@hiof.no</a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765433945!2d11.350228376913686!3d59.129250227020336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700667544086!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
-        <section></section>
-        <section>
-            <div>Logo</div>
-            <nav>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Linkdin</li>
-                </ul>
-            </nav>
-        </section>
+        <nav>
+            <a href="index.html"><img src="ressurser/ressurser/logo1.png" alt="logo"></a>
+            <p>Companyrights Companyname 2023</p>
+        <ul>
+            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li><a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin" ></i></a></li>
+        </ul>
+    </nav>
     </footer>
 
 </body>
