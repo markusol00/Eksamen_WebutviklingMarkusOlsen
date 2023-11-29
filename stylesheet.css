@@ -5,27 +5,28 @@
 
 
 body{
+    /*Setter maks skjermbredde til 1600px*/
     max-width: 1600px;
 }
 
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "topp" "mainarea" "bunn";
+    grid-template-areas: "header" "main" "footer";
     grid-template-rows: repeat(3, auto);
     
 }
 
 header{
-    grid-area: topp;
+    grid-area: header;
 }
 
 main{
-    grid-area: mainarea;
+    grid-area: main;
 }
 
 footer{
-    grid-area: bunn;
+    grid-area: footer;
 }
 
 /*Generelle fontstørrelseregler for mobil-versjonen*/
@@ -41,6 +42,8 @@ h3{
 p{
     font-size: 4vw;
 }
+
+/*Effekter til interaktive knapper:*/
 /*Klasse for gul hover-knapp*/
 .yellow-button{
     text-decoration: none;
@@ -57,6 +60,19 @@ p{
     color: #e6bd43;
     transition: 0.3s;
 }
+
+/*Kode for gul strek og bold skrift under aktivt menypunkt (Koden hentet fra ChatGpt.com) */
+header nav ul li a.active{
+    font-weight: bold;
+}
+
+header nav ul li a.active::after {
+    content: "";
+    display: block;
+    height: 2px; 
+    background-color: #e6bd43;
+}
+
 
 /*Forside Mobil Start */
 header nav{
@@ -94,6 +110,7 @@ nav ul li a{
     padding: 2.5rem;
     text-align: center;
     position: relative;
+    /*bildet under er hentet fra [pixabay.com] URL( https://pixabay.com/no/photos/penn-notisbok-notisblokk-dagbok-4337521/)*/
     background-image:url(img/pen-4337521_1280.jpg);
     background-size: cover;
     background-position: center;
@@ -109,17 +126,9 @@ nav ul li a{
 }
 
 #home-main-section-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 0 auto; 
     text-align: center;
     padding: 2.5rem;
-}
-
-#home-main-section-1 h3 {
-    font-size: 1.5rem;
 }
 
 #home-main-section-2 {
@@ -144,6 +153,9 @@ nav ul li a{
     border: 2px;
     border-style: solid;
 }
+#read-more-aboutus{
+    display: inline-block;
+}
 
 #home-main-section-3 {
     margin-top: 3rem;
@@ -155,10 +167,10 @@ nav ul li a{
     padding: 2rem;
 }
 
+/*Klassen "our-services-section brukes også på about-siden*/ 
 .our-services-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     width: 70%;
     margin: 0 auto;
     gap: 1.5rem;
@@ -183,12 +195,19 @@ nav ul li a{
 
 }
 
-#home-main-section-4 form input { 
-    height: 2.5rem;
+#home-main-section-4 form{
+    text-align: center;
 }
 
-footer {
-    height: 100%;
+#home-main-section-4 label{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+#home-main-section-4 form input { 
+    height: 2.5rem;
 }
 
 footer nav {
@@ -223,36 +242,12 @@ footer ul li i{
 
 /*Forside mobil slutt */
 
-
-.Read-more{
-    color: #000000;
-    margin-top: 25px;
-    font-weight: bold;
-    word-wrap: break-word;
-    display: inline-block;
-    max-width: 100%;
-}
-
-.Read-more:hover{
-    background-color: #000000;
-    color: #e6bd43;
-    transition: 0.3s;
-    
-}
-
-
 /*Portfolioside Mobil start */
-.bottom-border {
-    border-bottom: 4px solid #e6bd43;
-    padding-bottom: 8px;
-
-}
 
 #product-main{
     margin-left: 2rem;
     margin-right: 2rem;
 }
-
 
 #products-headline-section{
     display: flex;
@@ -268,16 +263,15 @@ footer ul li i{
     background-blend-mode: lighten;
 
 }
+/*Klasse for gul strek tildelt seksjons-headinger på portfolioside*/
+.bottom-border {
+    border-bottom: 4px solid #e6bd43;
+    padding-bottom: 8px;
+
+}
 
 #products-main-section-1 {
     text-align: left;
-}
-
-#products-main-section-1 hr{
-    border: 0;
-    height: 3px;
-    background-color: #e6bd43;
-    margin-bottom: 35px;
 }
 
 #products-main-section-1 h2 {
@@ -288,8 +282,6 @@ footer ul li i{
 #products-main-section-1 a {
     display: inline-block;
     margin: 0 10px;
-    text-decoration: none;
-    color: #252525;
     padding: 5px 10px;
 }
 
@@ -297,77 +289,50 @@ footer ul li i{
     border: 2px solid #000000; 
 }
 
+.product-navigation-button {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    border: 0;
+}
 
-#product-section-3 {
+/*Hovrings-effekt for arikelkort-lenkene*/
+.product-navigation-button:hover {
+    background-color: #000000;
+    color: #e6bd43;
+    transition: 0.3s;
+}
+
+/*Kode hentet via fra [chatGpt] URL(chatGpt.com) */
+.article-card-section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  
-  #product-section-3 article {
-    flex-grow: 2;
-    max-width: 692px;
-    margin: 10px;
-  }
-  
-  #product-section-3 img {
-    width: 100%;
-  }
+}
 
-  #product-section-4{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-#product-section-4 article{
+.article-card-section article {
     flex-grow: 1;
     max-width: 692px;
     margin: 10px;
 }
-#product-section-4 img {
+
+.article-card-section img {
     width: 100%;
 }
-#product-section-5{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-#product-section-5 article{
-    flex-grow: 1;
-    max-width: 692px;
-    margin: 10px;
 
-}
-#product-section-5 img{
-        width: 100%;
-    height: auto;
-    max-width: 100%;
-
+.product-article-card {
+    transition: transform 0.5s ease-in-out; /* Legg til overgangseffekt på transformasjonen */
 }
 
-/*Produktseksjon desktop slutt */
+.product-article-card:hover {
+    transform: scale(1.05); /* Øk størrelsen med 10% ved hover */
+}
+
+/*Portfolioside Mobil slutt */
   
 
-
-
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-i{
-    font-size: 2rem;
-}
-
-
-
-
-
-/* About-site */
+/* Aboutside Mobil start */
 
 #about-main-section-1{
     display: flex;
@@ -406,11 +371,10 @@ i{
     column-gap: 40px;
     background-color: #e6bd43;
     padding-bottom: 2.5rem;
-}
-#about-main-section-3{
     width: 100%;
     text-align: center;
 }
+
 #about-main-section-3 h2{
     width: 100%;
 }
@@ -436,7 +400,7 @@ i{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     border: none;
-    height: 2rem;
+    height: 2.5rem;
 }
 #input-box{
     display: flex;
@@ -458,63 +422,39 @@ i{
     margin-right: 1rem;
 }
 
+/*CSS-kode for kartet*/
 iframe{
     width: 100%;
 }
 
 
-header nav ul li a.active{
-    font-weight: bold;
-}
-/*Koden hentet fra ChatGpt.com */
-header nav ul li a.active::after {
-    content: "";
-    display: block;
-    height: 2px; 
-    background-color: #e6bd43;
-}
-
-
-.product-article-card {
-    transition: transform 0.5s ease-in-out; /* Legg til overgangseffekt på transformasjonen */
-}
-
-.product-article-card:hover {
-    transform: scale(1.05); /* Øk størrelsen med 10% ved hover */
-}
-
-#index-Backgroud-video{
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    opacity: 0.4;
-}
-
-
 @media only screen and (min-width: 600px){
-    /*Generelle regler for skjermbredder fra 600px- 1600px Start*/
+    /*Generelle regler for skjermbredder fra 600px- 1600px*/
 
-    body{
-        max-width: 1600px;
-    }
-
-    .grid-container{
-        grid-template-columns: 1fr 1fr 1fr;
-
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "header header header"
+            "main main main"
+            "footer footer footer";
+        grid-template-rows: repeat(3, auto);
     }
 
     header {
-        grid-column: 1 / span 3;
+        grid-area: header;
+    }
+
+    header nav img{
+        width: 90px;
     }
     
     main {
-        grid-column: 1 / span 3;
+        grid-area: main;
     }
 
     footer{
-        grid-column: 1 / span 3;
+        grid-area: footer;
     }
 
     h1{
@@ -529,23 +469,7 @@ header nav ul li a.active::after {
     p{
         font-size: 1rem;
     }
-    /*Generelle regler for skjermbredder fra 600px- 1600px Stopp */
-    
-    .yellow-button{
-        text-decoration: none;
-        color: black;
-        padding: 10px;
-        background-color: #e6bd43;
-        font-weight: bold;
-    
-    }
-    
-    .yellow-button:hover{
-        background-color: #000000;
-        color: #e6bd43;
-        transition: 0.3s;
-    }
-    
+
     header nav{
         flex-direction: row;
         justify-content: space-between;
@@ -568,6 +492,17 @@ header nav ul li a.active::after {
     #home-headline-section p{
         width: 60%;
     }
+    /*Video er et A-krav, men ønsket å utfordre meg selv*/
+
+    #index-Backgroud-video{
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.4;
+    }
+
     #index-Backgroud-video{
         display: block;
     }
@@ -575,20 +510,24 @@ header nav ul li a.active::after {
     #home-main-section-1{
         width: 60%; 
     }
+
     #home-main-section-1 h3{
         font-size: 1.5rem;
-    
     }
+
     #home-main-section-2{
         flex-direction: row;
     }
+
     #home-main-section-2 img{
         padding: 0;
     }
+
     #home-main-section-2 article{
         padding-bottom: 7rem;
         margin-left: 2rem;
-    }    
+    }
+    /*Koden for our-services-seksjonen finnes på linje 154-166*/     
     .our-services-section{
         flex-direction: row;
     }
@@ -596,41 +535,19 @@ header nav ul li a.active::after {
     #home-section-4 form input{
         height: 2.5rem;
     }
-    footer{
-    
-    }
+
     footer nav{
         flex-direction: row;
     }
+
     footer nav img {
-        width: 75px;
+        width: 90px;
     }
     /*Forside desktop slutt /*
-    
 
-    /*klasse*/
-    .Read-more{
-        color: #000000;
-        margin-top: 25px;
-        font-weight: bold;
-    }
-    
-    .Read-more:hover{
-        background-color: #000000;
-        color: #e6bd43;
-        transition: 0.3;
-        
-    }
     
     
-    /*Portfolioside start */
-    .bottom-border {
-        border-bottom: 4px solid #e6bd43;
-        padding-bottom: 8px;
-    
-    }
-    
-    
+    /*Portfolioside desktop start */    
     #product-section-2 hr{
         border: 0;
         height: 3px;
@@ -638,55 +555,33 @@ header nav ul li a.active::after {
         margin-bottom: 35px;
     }
     
-
-    /*Produktseksjon desktop slutt */
+    /*Portfolioside desktop slutt */
       
-      
-    
-    
-    
-    
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    
     
     i{
         font-size: 2rem;
     }
     
-    
-    
-    
-    
-    /* About-site */
+    /* Aboutside deksktop start */
     
     #about-main-section-1{
         justify-content: flex-end;
     
     }
+
     #about-main-section-1 article{
         width: 40%;
         padding: 1.5rem;
         margin-right: 3rem;
     }
+
     #about-main-section-1 h2{
         font-size: 2vw;
     }
+
     #about-main-section-1 a{
         width: 50%;
         text-align: center;
-    }
-    
-    #about-main-section-3{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        column-gap: 40px;
-        background-color: #e6bd43;
-        padding-bottom: 2.5rem;
     }
     
     #about-main-section-4{
@@ -709,36 +604,6 @@ header nav ul li a.active::after {
         width: 100%;
     }
     
-    
-    header nav ul li a.active{
-        font-weight: bold;
-    }
-    /*Koden hentet fra ChatGpt.com */
-    header nav ul li a.active::after {
-        content: "";
-        display: block;
-        height: 2px; 
-        background-color: #e6bd43;
-    }
-    
-    
-    .product-article-card {
-        transition: transform 0.5s ease-in-out; /* Legg til overgangseffekt på transformasjonen */
-    }
-    
-    .product-article-card:hover {
-        transform: scale(1.05); /* Øk størrelsen med 10% ved hover */
-    }
-    
-    #index-Backgroud-video{
-        position: absolute;
-        z-index: -1;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        opacity: 0.4;
-    }
-
     #Contact-messagebox{
         max-height: 100%;
     }
