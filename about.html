@@ -6,8 +6,28 @@
     <title>About</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://kit.fontawesome.com/657ab0802c.js" crossorigin="anonymous"></script>
+
+    <!--Linker for google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Opengraph metadata -->
+    <meta property="og:title" content="about">
+    <meta property="og:description" content="Learn more about our company">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://itstud.hiof.no/~markusol/">
+        
+    <!--Metadata for facebook-->
+    <meta property="og:title" content="Index">
+    <meta property="og:description" content="Find the right developer team">
+    <meta property="og:image" content="URL til et bilde som representerer nettsiden din">
+    <meta property="og:url" content="https://itstud.hiof.no/~markusol/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    
 </head>
-<body>
+<body class="grid-container">
     <header>
         <nav>
             <a href="index.html"><img src="ressurser/ressurser/logo1.png" alt="logo"></a>
@@ -33,7 +53,7 @@
         </section>
         <section id="about-main-section-2">
             <h2>Our services</h2>
-            <div class="our-services-section">
+            <div class="our-services-section"> 
                 <article>
                     <i class="fa-solid fa-users"></i>
                     <h3>Brandings</h3>
@@ -54,7 +74,8 @@
                     <h3>Support</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </article>
-            </section>
+            </div>
+        </section>
             <section id="about-main-section-3">
                 <h2>Some of our clients</h2>
                 <img src="ressurser/ressurser/logo1.png" alt="Logo1">
@@ -64,19 +85,21 @@
             </section>
             <section id="about-main-section-4">
                 <h2>Contact us</h2>
-                <article>
+                <article aria-label="contact form">
                     <h3>Send us a message</h3>
                     <form>
-                        <label>Name</label>
-                        <input type="search" placeholder="Ola Nordmann...">
+                        <label for="bens" aria-label="Enter your name">Name</label>
+                        <input id="bens" type="search" placeholder="Ola Nordmann...">
                     </form>
                     <form>
-                        <label>Subject</label>
-                        <input type="search" placeholder="Branding...">
+                        <label for="subject" aria-label="Write your subject">Subject</label>
+                        <input id="subject" type="search" placeholder="Branding...">
                     </form>
-                    <form>
-                        <label>Message</label>
-                        <input id="about-message-input" type="search" placeholder="">
+                    <!--Kode under(textarea) inspirert av [w3schools.com] (URL:https://www.w3schools.com/tags/tag_textarea.asp) -->
+                    <form id="input-box">
+                        <label id="full-row" for="message" aria-label="Write a message">Message</label>
+                        <textarea id="message" name="w3review" rows="7" cols="50">
+                        </textarea>
                     </form>
                     <button class="yellow-button">Send message</button>
                 </article>
@@ -100,16 +123,17 @@
                     </ul>
                 </article>
             </section>
+            <!--Kode under inspirert av [blog.hotspot.com] (URL: https://blog.hubspot.com/website/how-to-embed-google-map-in-html)-->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765433945!2d11.350228376913686!3d59.129250227020336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700667544086!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
-        <nav>
+        <nav aria-label="bottom menu">
             <a href="index.html"><img src="ressurser/ressurser/logo1.png" alt="logo"></a>
             <p>Companyrights Companyname 2023</p>
-        <ul>
-            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
-            <li><a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin" ></i></a></li>
+        <ul aria-label="List for sharing to social media">
+            <li><a href="https://www.facebook.com/" aria-label="link to Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/" aria-label="link to Instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li><a href="https://no.linkedin.com/" aria-label="link to LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
         </ul>
     </nav>
     </footer>

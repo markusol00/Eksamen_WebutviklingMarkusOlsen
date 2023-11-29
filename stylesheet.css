@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -8,7 +8,27 @@ body{
     max-width: 1600px;
 }
 
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "topp" "mainarea" "bunn";
+    grid-template-rows: repeat(3, auto);
+    
+}
 
+header{
+    grid-area: topp;
+}
+
+main{
+    grid-area: mainarea;
+}
+
+footer{
+    grid-area: bunn;
+}
+
+/*Generelle fontstørrelseregler for mobil-versjonen*/
 h1{
     font-size: 8vw;
 }
@@ -21,16 +41,17 @@ h3{
 p{
     font-size: 4vw;
 }
+/*Klasse for gul hover-knapp*/
 .yellow-button{
     text-decoration: none;
     color: black;
     padding: 10px;
     background-color: #e6bd43;
     font-weight: bold;
-    border: none;
+    border: 0;
 
 }
-
+/*Klasse for gul knapp når man hovrer */
 .yellow-button:hover{
     background-color: #000000;
     color: #e6bd43;
@@ -79,15 +100,15 @@ nav ul li a{
     background-color: #c4bbb0;
     background-blend-mode: lighten;
 }
-#home-headline-section h1{
+#home-headline-section h1 {
     margin: 10px;
 }
 
-#index-Backgroud-video{
+#index-Backgroud-video {
     display: none;
 }
 
-#home-main-section-1{
+#home-main-section-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,25 +117,27 @@ nav ul li a{
     text-align: center;
     padding: 2.5rem;
 }
-#home-main-section-1 h3{
-    font-size: 1.5rem;
 
+#home-main-section-1 h3 {
+    font-size: 1.5rem;
 }
 
-#home-main-section-2{
+#home-main-section-2 {
     display: flex;
     flex-direction: column;
     background-color: #e6bd43;
     align-items: center;
     padding: 2rem;
 }
-#home-main-section-2 img{
+
+#home-main-section-2 img {
     padding: 1.5rem;
 }
-#home-main-section-2 article{
+
+#home-main-section-2 article {
     width: 50%
-    
 }
+
 #home-main-section-2 article a {
     text-decoration: none;
     padding: 1rem;
@@ -122,17 +145,17 @@ nav ul li a{
     border-style: solid;
 }
 
-#home-main-section-3{
+#home-main-section-3 {
     margin-top: 3rem;
     margin-bottom: 3rem;
     text-align: center;
 }
 
-#home-main-section-3 h2{
+#home-main-section-3 h2 {
     padding: 2rem;
 }
 
-.our-services-section{
+.our-services-section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -140,14 +163,18 @@ nav ul li a{
     margin: 0 auto;
     gap: 1.5rem;
 }
-.our-services-section article{
+.our-services-section article {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-#home-main-section-4{
+.our-services-section i {
+    font-size: 3rem;
+}
+
+#home-main-section-4 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,15 +183,15 @@ nav ul li a{
 
 }
 
-#home-main-section-4 form input{
+#home-main-section-4 form input { 
     height: 2.5rem;
-
 }
 
-footer{
+footer {
     height: 100%;
 }
-footer nav{
+
+footer nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -173,22 +200,24 @@ footer nav{
     height: 100%;
     padding: 2rem;
 }
+
 footer ul {
     list-style: none;
     display: flex;
     gap: 30px;
     padding: 0;
-
 }
+
 footer nav img {
     width: 75px;
 }
-footer p{
+footer p {
     color: white;
-
 }
+
 footer ul li i{
     color: white;
+    font-size: 3rem;
 
 }
 
@@ -212,7 +241,7 @@ footer ul li i{
 }
 
 
-/*Portfolioside start */
+/*Portfolioside Mobil start */
 .bottom-border {
     border-bottom: 4px solid #e6bd43;
     padding-bottom: 8px;
@@ -223,6 +252,7 @@ footer ul li i{
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
 
 #products-headline-section{
     display: flex;
@@ -267,6 +297,7 @@ footer ul li i{
     border: 2px solid #000000; 
 }
 
+
 #product-section-3 {
     display: flex;
     justify-content: space-between;
@@ -296,8 +327,6 @@ footer ul li i{
 }
 #product-section-4 img {
     width: 100%;
-    height: auto;
-    max-width: 100%;
 }
 #product-section-5{
     display: flex;
@@ -318,7 +347,6 @@ footer ul li i{
 }
 
 /*Produktseksjon desktop slutt */
-  
   
 
 
@@ -405,12 +433,14 @@ i{
 }
 #about-main-section-4 article form input{
     width: 100%;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     border: none;
     height: 2rem;
 }
-#about-main-section-4 article form #about-message-input {
-    height: 8rem;
+#input-box{
+    display: flex;
+    flex-direction: column;
 }
 
 #about-main-section-4 ul {
@@ -468,6 +498,23 @@ header nav ul li a.active::after {
 
     body{
         max-width: 1600px;
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    header {
+        grid-column: 1 / span 3;
+    }
+    
+    main {
+        grid-column: 1 / span 3;
+    }
+
+    footer{
+        grid-column: 1 / span 3;
     }
 
     h1{
@@ -652,9 +699,6 @@ header nav ul li a.active::after {
     #about-main-section-4 article form input{
         height: 2.5rem;
     }
-    #about-main-section-4 article form #about-message-input {
-        height: 10rem;
-    }
     
     #about-main-section-4 ul li i {
         font-size: 25px;
@@ -694,7 +738,18 @@ header nav ul li a.active::after {
         object-fit: cover;
         opacity: 0.4;
     }
+
+    #Contact-messagebox{
+        max-height: 100%;
+    }
     
+    #input-box{
+        display: flex;
+        flex-direction: column;
+    }
+    #full-row{
+        margin-bottom: 0.5rem;
+    }
 
 
 

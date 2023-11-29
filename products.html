@@ -6,8 +6,28 @@
     <title>Products</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://kit.fontawesome.com/657ab0802c.js" crossorigin="anonymous"></script>
+
+    <!--Linker for google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <!--Opengraph metadata-->
+    <meta property="og:title" content="products">
+    <meta property="og:description" content="Explore privoius jobs">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://itstud.hiof.no/~markusol/products.html">
+    
+    <!--Metadata for facebook-->
+    <meta property="og:title" content="Index">
+    <meta property="og:description" content="Explore our privious jobs">
+    <meta property="og:image" content="URL til et bilde som representerer nettsiden din">
+    <meta property="og:url" content="https://itstud.hiof.no/~markusol/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    
 </head>
-<body>
+<body class="grid-container">
     <header>
         <nav>
             <a href="index.html"><img src="ressurser/ressurser/logo1.png" alt="logo"></a>
@@ -26,14 +46,12 @@
         <section id="products-main-section-1">
             <article>
                 <h2 class="bottom-border">Explore previous jobs</h2>
-                <br>
-                <a href="#product-section-3" class="button" alt="Link to branding sections">Branding</a>
-                <a href="#product-section-4"  class="button" alt="Link-to design section">Design</a>
-                <a href="#product-section-5" class="button" alt="Link to development section">Development</a>
+                <a href="#product-main-section-2">Branding</a>
+                <a href="#product-main-section-3">Design</a>
+                <a href="#product-main-section-4">Development</a>
             </article>
         </section>
-
-        <section>
+        <section id="product-main-section-2">
             <h2 class="bottom-border">Branding</h2>
             <div id="product-section-3">
                 <article class="product-article-card">
@@ -54,7 +72,7 @@
                 </article>
             </div>
         </section>
-        <section>
+        <section id="product-main-section-3">
             <h2 class="bottom-border">Design</h2>
             <div id="product-section-4">
                 <article class="product-article-card">
@@ -71,8 +89,8 @@
                 </article>
             </div>
         </section>
-        <section>
-            <h2 class="bottom-border" >Development</h2>
+        <section id="product-main-section-4">
+            <h2 class="bottom-border">Development</h2>
             <div id="product-section-5">
                 <article class="product-article-card">
                     <img src="https://placehold.co/400x400" alt="Gray placeholder picture">
@@ -87,13 +105,13 @@
 
     </main>
     <footer>
-        <nav>
+        <nav aria-label="bottom menu">
             <a href="index.html"><img src="ressurser/ressurser/logo1.png" alt="logo"></a>
             <p>Companyrights Companyname 2023</p>
-        <ul>
-            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
-            <li><a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+        <ul aria-label="List for sharing to social medias">
+            <li><a href="https://www.facebook.com/" aria-label="link to Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/" aria-label="link to Instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li><a href="https://no.linkedin.com/" aria-label="link to LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
         </ul>
     </nav>
     </footer>
