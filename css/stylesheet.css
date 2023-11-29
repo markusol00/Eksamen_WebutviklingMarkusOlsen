@@ -304,7 +304,7 @@ footer ul li i{
     transition: 0.3s;
 }
 
-/*Kode hentet via fra [chatGpt] URL(chatGpt.com) */
+/*Kode hentet via fra [chatGpt] URL(https://chat.openai.com/c/64d48864-702c-4e0d-8ffe-e4c5c6790dbc) */
 .article-card-section {
     display: flex;
     justify-content: space-between;
@@ -320,13 +320,13 @@ footer ul li i{
 .article-card-section img {
     width: 100%;
 }
-
+/*Kode hentet via [chatGpt] URL (https://chat.openai.com/c/64d48864-702c-4e0d-8ffe-e4c5c6790dbc)*/
 .product-article-card {
-    transition: transform 0.5s ease-in-out; /* Legg til overgangseffekt på transformasjonen */
+    transition: transform 0.5s ease-in-out;
 }
 
 .product-article-card:hover {
-    transform: scale(1.05); /* Øk størrelsen med 10% ved hover */
+    transform: scale(1.05);
 }
 
 /*Portfolioside Mobil slutt */
@@ -583,17 +583,26 @@ iframe{
     #about-main-section-4{
         flex-direction: row;
     }
+
+    #about-main-section-4 button{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
     #about-main-section-4 article{
         width: 40%;
         padding: 0;
     }
+
     #about-main-section-4 article form input{
         height: 2.5rem;
     }
+
     #message-box{
         display: flex;
         flex-direction: column;
     }
+
     #full-row{
         margin-bottom: 0.5rem;
     }
