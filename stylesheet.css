@@ -546,8 +546,8 @@ iframe{
     /*Forside desktop slutt /*
 
     
-    
-    /*Portfolioside desktop start */    
+    /*Portfolioside desktop start */  
+
     #product-section-2 hr{
         border: 0;
         height: 3px;
@@ -557,11 +557,7 @@ iframe{
     
     /*Portfolioside desktop slutt */
       
-    
-    i{
-        font-size: 2rem;
-    }
-    
+
     /* Aboutside deksktop start */
     
     #about-main-section-1{
@@ -594,7 +590,14 @@ iframe{
     #about-main-section-4 article form input{
         height: 2.5rem;
     }
-    
+    #message-box{
+        display: flex;
+        flex-direction: column;
+    }
+    #full-row{
+        margin-bottom: 0.5rem;
+    }
+
     #about-main-section-4 ul li i {
         font-size: 25px;
         margin-right: 1.5rem;
@@ -604,18 +607,4 @@ iframe{
         width: 100%;
     }
     
-    #Contact-messagebox{
-        max-height: 100%;
-    }
-    
-    #input-box{
-        display: flex;
-        flex-direction: column;
-    }
-    #full-row{
-        margin-bottom: 0.5rem;
-    }
-
-
-
     }
