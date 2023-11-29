@@ -111,7 +111,7 @@ nav ul li a{
     text-align: center;
     position: relative;
     /*bildet under er hentet fra [pixabay.com] URL( https://pixabay.com/no/photos/penn-notisbok-notisblokk-dagbok-4337521/)*/
-    background-image:url(img/pen-4337521_1280.jpg);
+    background-image:url('..img/pen-4337521_1280.jpg..');
     background-size: cover;
     background-position: center;
     background-color: #c4bbb0;
@@ -257,7 +257,7 @@ footer ul li i{
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: #c4bbbbb0;
-    background-image: url(img/pen-4337521_1280.jpg);
+    background-image: url('../img/pen-4337521_1280.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: lighten;
@@ -339,7 +339,7 @@ footer ul li i{
     flex-wrap: nowrap;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-image: url(img/pen-4337521_1280.jpg);
+    background-image: url('../img/pen-4337521_1280.jpg');
     background-size: cover;
     justify-content: center;
 
