@@ -11,8 +11,11 @@ body{
 
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr; 
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
     grid-template-rows: repeat(3, auto);
     
 }
@@ -111,7 +114,7 @@ nav ul li a{
     text-align: center;
     position: relative;
     /*bildet under er hentet fra [pixabay.com] URL( https://pixabay.com/no/photos/penn-notisbok-notisblokk-dagbok-4337521/)*/
-    background-image:url('..img/pen-4337521_1280.jpg..');
+    background-image:url('../img/pen-4337521_1280.jpg');
     background-size: cover;
     background-position: center;
     background-color: #c4bbb0;
